@@ -1,4 +1,5 @@
 <?php
+    // question 1
     $categories = [
         [
             "nom"=>"categorie1",
@@ -15,3 +16,10 @@
         ]
     ];
 
+    // question 2
+    foreach ($categories as  $categorie) {
+        if (count($categorie["produits"])==0) {
+            echo"nom :".$categorie["nom"]."\n";
+            echo" code :".$categorie["code"];
+        }
+    }
